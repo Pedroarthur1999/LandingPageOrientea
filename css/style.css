@@ -137,7 +137,7 @@ a:hover {
   justify-content: space-between;
   padding: 10px 20px;
   width: 95vw;
-  height: calc(100vh - 45px);
+  
 }
 .title-section {
   margin-bottom: 25px;
@@ -147,6 +147,7 @@ a:hover {
     padding: 0px;
     padding-left: 50px;
     min-height: 100vh;
+    height: calc(100vh - 45px);
   }
   .content-text {
     padding-right: 50px;

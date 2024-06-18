@@ -11,8 +11,7 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 4px 10px 3px rgba(204, 204, 204, 0.78);
-    font-size: 12px;
-    height: 45%;
+    font-size: 12px;    
     padding: 20px;
     transition: all 0.2s ease-out;
     width: 19rem;
@@ -52,4 +51,22 @@
   }
 .text-content-services {
     font-size: 16px;
+  }
+
+
+  
+  @media (min-width:1280px) {
+
+    .card-services{
+height: 45%;
+    }
+    
+  }
+
+  @media (max-width:720px) {
+
+    .card-services{
+      min-height: 291px;
+    }
+    
   }
