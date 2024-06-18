@@ -21,6 +21,7 @@ h2 {
   font-size: 36px;
   font-weight: bold;
   text-transform: capitalize;
+  overflow-y: hidden;
 }
 p {
   color: var(--text-color);
@@ -128,50 +129,52 @@ a:hover {
   font-family: "Mulish";
   font-weight: 500;
 }
+
 .section-container {
   align-items: center;
   background-color: #fff;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   padding: 10px 20px;
   width: 95vw;
+  height: calc(100vh - 45px);
+}
+.title-section {
+  margin-bottom: 25px;
 }
 @media (min-width: 1280px) {
-    
-    .section-container{
-        padding: 0px;        
-        padding-left: 50px;
-        height: 95vh;
-    }
-    .content-text{
-        padding-right: 50px;
-    }
+  .section-container {
+    padding: 0px;
+    padding-left: 50px;
+    min-height: 100vh;
+  }
+  .content-text {
+    padding-right: 50px;
+  }
 }
 
-@media (max-width:1279px) {
+@media (max-width: 1279px) {
+  .btn {
+    padding: 15px 60px;
+  }
 
-    .btn{
-        padding: 15px 60px;
-    }
+  .content-text {
+    padding-right: 0px;
+  }
 
-    .content-text{
-        padding-right: 0px;
-    }
-    
-    .section-container{
-        padding: 0px;
-        flex-direction: column;
-        padding-left: 0px;    
-        margin-top: 120px;
-        gap: 30px;
-    }
+  .section-container {
+    padding: 0px;
+    flex-direction: column;
+    padding-left: 0px;
+    margin-top: 120px;
+    gap: 30px;
+  }
 
-    .section-container figure{
-        padding-left: 0px;
-    }
+  .section-container figure {
+    padding-left: 0px;
+  }
 
-    .sidebar-content{
-        margin-top: 30px;
-    }
-
+  .sidebar-content {
+    margin-top: 30px;
+  }
 }
