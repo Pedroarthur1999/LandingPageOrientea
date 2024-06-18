@@ -11,17 +11,20 @@
     <link rel="stylesheet" href="css/services.css" />
     <link rel="stylesheet" href="css/services.css" />
     <link rel="stylesheet" href="css/menu_mobile.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <link
       rel="shortcut icon"
       href="assets/_favicon/logo.ico"
       type="image/x-icon"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js" defer></script> <!-- Inclua seu arquivo .js aqui -->
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+    <!-- Inclua seu arquivo .js aqui -->
   </head>
   <body>
     <div class="container">
-      <header class="menu-header">      
+      <header class="menu-header">
         <figure class="image-container">
           <img src="assets/_images/logo.png" alt="logo_menu_header" />
           <figcaption class="image-header-title">OrienTea</figcaption>
@@ -35,7 +38,7 @@
             <li class="nav-item"><a href=""> Contato </a></li>
           </ul>
         </nav>
-        <div class="hamburguer ">
+        <div class="hamburguer">
           <div class="line" id="line1"></div>
           <div class="line" id="line2"></div>
           <div class="line" id="line3"></div>
@@ -47,13 +50,47 @@
             <div class="image_photo">
               <img src="assets/_images/logo.png" alt="Profile" width="125" />
             </div>
-            <nav class="container-content-clm" style="width: 100%; display: flex; ">
+            <nav
+              class="container-content-clm"
+              style="width: 100%; display: flex"
+            >
               <ul class="menu">
-                <li class="nav-item"><a href="#"><div class="div-content"><i class="fas fa-home"></i></div>Home</a></li>                
-                <li class="nav-item"><a href="#"><div class="div-content"><i class="fas fa-question"></i></div>Sobre</a></li>
-                <li class="nav-item"><a href="#"><div class="div-content"><i class="fas fa-toolbox"></i></div>Serviços</a></li>
-                <li class="nav-item"><a href="#"><div class="div-content"><i class="fas fa-mobile-alt"></i></div>App</a></li>
-                <li class="nav-item"><a href="#"><div class="div-content"><i class="fas fa-phone"></i></div>Contato</a></li>
+                <li class="nav-item">
+                  <a href="#"
+                    ><div class="div-content"><i class="fas fa-home"></i></div>
+                    Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                    ><div class="div-content">
+                      <i class="fas fa-question"></i>
+                    </div>
+                    Sobre</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                    ><div class="div-content">
+                      <i class="fas fa-toolbox"></i>
+                    </div>
+                    Serviços</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                    ><div class="div-content">
+                      <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    App</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                    ><div class="div-content"><i class="fas fa-phone"></i></div>
+                    Contato</a
+                  >
+                </li>
               </ul>
             </nav>
             <footer class="social">
@@ -74,15 +111,13 @@
       </aside>
 
       <section class="section-container" id="home">
-        <figure
-          class="image-banner container-content-row"          
-        >
+        <figure class="image-banner container-content-row">
           <img src="assets/_images/header-banner.png" alt="banner_menu" />
         </figure>
         <div class="content" style="align-items: center">
           <img src="assets/_images/element.png" alt="logo menu header" />
         </div>
-        <div class="content content-text" >
+        <div class="content content-text">
           <h2 style="width: 60%; margin-bottom: 10px">
             assistência virtual para você!
           </h2>
@@ -96,11 +131,100 @@
       </section>
       <section class="section-container" id="sobre">
         <h2 class="title-section">Sobre</h2>
+        <div class="content-about">
+          <figure class="image-about">
+            <img
+              src="assets/_images/logo.png"
+              width="200px"
+              alt="logo_menu_header"
+            />
+          </figure>
+          <div class="text-container">
+            <div class="border-div"></div>
+            <p class="text-content" style="">
+              O OrienTea nasceu com a missão de reduzir os grandes impactos
+              causados pela falta de profissionais especializados no
+              desenvolvimento infantil. Nosso aplicativo foi criado para atender
+              às necessidades de saúde das crianças em fase de
+              neurodesenvolvimento (0 a 3 anos). A estimulação e a terapia
+              precoce são fundamentais para garantir resultados mais
+              significativos. Devido à neuroplasticidade, as crianças que
+              recebem terapia antes dos 3 anos conseguem formar mais conexões
+              sinápticas, promovendo um avanço maior e um melhor prognóstico.
+            </p>
+            <div class="border-div"></div>
+          </div>
+        </div>
       </section>
-      <section class="section-container"></section>
+      <section class="section-container container-content-clm" id="services">
+        <h2 class="title-section">Serviços</h2>
+        <div class="services-content">
+          <div class="card-services">
+            <div class="card-container">
+              <figure><img src="assets/_services_icons/1_diagnosis.png" alt="" /></figure>
+              <h4>Diagnóstico Profissional</h4>
+              <p class="text-content-services">
+                Diagnóstico realizado por testes e protocolos validados, com
+                prática baseada em evidências científicas e profissionais.
+              </p>
+            </div>
+          </div>
+          <div class="card-services">
+            <div class="card-container">
+              <figure><img src="assets/_services_icons/2_video.png" alt="" /></figure>
+              <h4>Vídeos Terapêuticos</h4>
+              <p class="text-content-services">
+                Democratizar o acesso a informação, fornecendo insights valiosos e
+                estratégias práticas para apoiar o desenvolvimento motor, da fala
+                e psicossocial
+            </div>
+            </p>
+          </div>
+          <div class="card-services">
+            <div class="card-container">
+              <figure><img src="assets/_services_icons/3_register_child.png" alt="" /></figure>
+              <h4>Cadastro de Crianças</h4>
+              <p class="text-content-services">
+                Orientar na busca de diagnostico precoce, minimizando o prejuízo
+                de atrasos.
+              </p>
+            </div>
+          </div>
+          <div class="card-services">
+            <div class="card-container">
+              <figure><img src="assets/_services_icons/4_situation.png" alt="" /></figure>
+              <h4>Diagnóstico Situacional</h4>
+              <p class="text-content-services">
+                Através da triagem realizada no local, conseguimos traçar um
+                diagnóstico da situação de saúde daquela localidade.
+              </p>
+            </div>
+          </div>
+          <div class="card-services">
+            <div class="card-container">
+              <figure><img src="assets/_services_icons/5_data.png" alt="" /></figure>
+              <h4>Levantamento de Dados</h4>
+              <p class="text-content-services">
+                You can get 24/7 urgent care for yourself or your children and
+                your lovely family
+              </p>
+            </div>
+          </div>
+          <div class="card-services">
+            <div class="card-container">
+              <figure><img src="assets/_services_icons/6_dashboard.png" alt="" /></figure>
+              <h4>DashBoard Centralizado</h4>
+              <p class="text-content-services">
+                Apresenta de forma clara e acessível os dados relevantes sobre o
+                progresso da criança, permitindo uma análise mais informada e
+                direcionada
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section-container"></section>
       <section></section>
     </div>
-  </body>  
- 
+  </body>
 </html>
